@@ -1,25 +1,29 @@
-import './App.css'
-import { useCounter } from './hooks/useCounter'
-
-function App() {
-  const counter = useCounter()
-
-
-
-
-
-
-return (
-    <div>
-    <h2>El pibe </h2>
-    <p>contador:{counter.state} </p>
-    <button onClick={counter.add}> sumar</button>  
-    <button onClick={counter.substract}>restar</button> 
-    <button onClick={counter.reset}>resetear</button>
-
+export const RegisterForm = () => {
+  return (
+    <div className="container">
+      <section className="card">
+        <h1 className="titulo">Crear Evento </h1>
+        <form>
+          <div>
+            <label>Responsable</label>
+            <input type="text" placeholder="Introduce nombre" />
+          </div>
+          <div>
+            <label htmlFor="">Nombre del evento</label>
+            <input type="text" placeholder="introduce evento" />
+          </div>
+          <div>
+            <label htmlFor="">fecha del evento</label>
+            <input type="date" />
+          </div>
+          <div>
+          <button>
+            {""}
+            <span>Registrar</span>
+          </button>
+          </div>
+        </form>
+      </section>
     </div>
-  )
-  
-}
-
-export default App
+  );
+};
