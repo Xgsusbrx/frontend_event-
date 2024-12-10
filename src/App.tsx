@@ -1,29 +1,38 @@
+
 export const RegisterForm = () => {
   return (
-    <div className="container">
-      <section className="card">
-        <h1 className="titulo">Crear Evento </h1>
-        <form>
-          <div>
-            <label>Responsable</label>
-            <input type="text" placeholder="Introduce nombre" />
-          </div>
-          <div>
-            <label htmlFor="">Nombre del evento</label>
-            <input type="text" placeholder="introduce evento" />
-          </div>
-          <div>
-            <label htmlFor="">fecha del evento</label>
-            <input type="date" />
-          </div>
-          <div>
-          <button>
-            {""}
-            <span>Registrar</span>
-          </button>
-          </div>
-        </form>
-      </section>
-    </div>
+    <form className="form">
+      <h2 className="form_title">Crear Evento</h2>
+
+
+      <div className="form_container">
+          <div className="form_group">
+              <input type="text"  id="name" className="form_input" placeholder=" "/> 
+             <label htmlFor="name" className="form_label"> Responsable </label> 
+             <span className="form_line"></span> 
+           </div> 
+
+           <div className="form_group">
+              <input type="text"  id="evento" className="form_input" placeholder=" "/> 
+             <label htmlFor="evento" className="form_label"> Nombre del Evento </label> 
+             <span className="form_line"></span> 
+           </div> 
+
+           <div className="form_group">
+              <input type="date"  id="date" className="form_input"/> 
+             <label htmlFor="name" className="form_label"> Fecha del evento</label> 
+             <span className="form_line"></span> 
+           </div> 
+
+           <input type="submit" className="form_submit" value="Registrar" />
+
+
+
+
+       </div>   
+    
+    </form>
+    
   );
+  
 };
